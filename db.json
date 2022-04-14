@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "title": "Banane",
+      "description": "Une banane toute jaune",
+      "image": "/assets/img/banana.png",
+      "price": 12,
+      "id": 2,
+      "available": true
+    },
+    {
+      "title": "Pomme",
+      "description": "poemememem",
+      "image": "/assets/img/apple.png",
+      "available": true,
+      "price": "",
+      "id": 4
+    },
+    {
+      "title": "orange",
+      "description": "pomme",
+      "image": "/assets/img/orange.png",
+      "available": false,
+      "price": 2,
+      "id": 7
+    },
+    {
+      "title": "Kiwi",
+      "description": "Une banane toute jaune",
+      "image": "/assets/img/kiwi.png",
+      "price": 12,
+      "id": 8,
+      "available": false
+    },
+    {
+      "title": "Mirtille",
+      "description": "poemememem",
+      "image": "/assets/img/blueberry.png",
+      "available": true,
+      "price": "",
+      "id": 9
+    },
+    {
+      "title": "Framboise",
+      "description": "pomme",
+      "image": "/assets/img/raspberry.png",
+      "available": false,
+      "price": 2,
+      "id": 10
+    },
+    {
+      "title": "Citron",
+      "description": "poemememem",
+      "image": "/assets/img/lemon.png",
+      "available": true,
+      "price": "",
+      "id": 12
+    },
+    {
+      "title": "Orange",
+      "description": "pomme",
+      "image": "/assets/img/orange.png",
+      "available": false,
+      "price": 2,
+      "id": 13
+    },
+    {
+      "title": "Mirtille",
+      "description": "Une banane toute jaune",
+      "image": "/assets/img/blueberry.png",
+      "price": 12,
+      "id": 14,
+      "available": false
+    },
+    {
+      "title": "Pomme",
+      "description": "poemememem",
+      "image": "/assets/img/apple.png",
+      "available": true,
+      "price": "",
+      "id": 15
+    },
+    {
+      "title": "Orange",
+      "description": "pomme",
+      "image": "/assets/img/orange.png",
+      "available": false,
+      "price": 2,
+      "id": 16
+    },
+    {
+      "title": "Banane",
+      "description": "Une banane toute jaune",
+      "image": "/assets/img/banana.png",
+      "price": 12,
+      "id": 17,
+      "available": false
+    },
+    {
+      "title": "Pomme",
+      "description": "poemememem",
+      "image": "/assets/img/apple.png",
+      "available": true,
+      "price": 12,
+      "id": 18
+    },
+    {
+      "title": "Orange",
+      "description": "pomme",
+      "image": "/assets/img/orange.png",
+      "available": false,
+      "price": 2,
+      "id": 19
+    },
+    {
+      "title": "Banane",
+      "description": "Une banane toute jaune",
+      "image": "/assets/img/banana.png",
+      "price": 12,
+      "id": 20,
+      "available": false
+    }
+  ]
+}

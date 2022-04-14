@@ -1,0 +1,74 @@
+<section class="container m-auto">
+  <h1 class="text-center text-white mb-4 mt-4">La Liste de mes produits : </h1>
+  <!-- Alerte produit supprimé -->
+  <div class="bg-danger text-white text-center w-500 m-auto mb-4" *ngIf="show">Le produit est supprimé
+  </div>
+<!-- Commencement mise en page Grid System -->
+  <div class="row">
+    <!-- Commencement formulaire recherche -->
+    <div class="row">
+      <div class="col-6">
+
+        <!-- Recherche par gamme de prix-->
+        <h6 class="text-white text-center">Search by price range</h6>
+        <form>
+          <div class="row mb-5">
+            <div class="col-4">
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Min price">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Max price">
+              </div>
+            </div>
+            <div class="col-4">
+              <button type="submit" class="btn btn-primary">Rechercher</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-6">
+        <!-- Recherche par mot-clés-->
+        <h6 class="text-white text-center">Search by keyword</h6>
+        <form>
+          <div class="row mb-5">
+            <div class="col-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Mot-clé">
+              </div>
+            </div>
+            <div class="col-6">
+              <button type="submit" class="btn btn-primary">Rechercher</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+<!-- Commencement de la boucle qui affiche tous les produits -->
+    <div class="col-sm" *ngFor="let product of products">
+      <div class="card shadow-sm  rounded mb-4">
+        <img src="{{product.image}}" class="img-thumbnnail rounded-start m-auto"
+          style="object-fit: contain; width:500px;height:500px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{product.title}}</h5>
+          <p class="card-text">{{product.description}}</p>
+          <div class="row">
+            <div class="col-sm mb-2">
+              <p class="card-text text-muted">{{product.price}}€ la barquette de 500g</p>
+            </div>
+            <div class="col-sm mb-2"> <i class="fa-solid"
+                [ngClass]="{'fa-thumbs-up text-success': product.available, 'fa-thumbs-down text-danger': !product.available}"
+                (click)="isAvailableFromProducts(product)">{{product.available}}</i>
+            </div>
+            <div class="col-sm mb-2"><button class="btn btn-danger"
+                (click)="deleteProductsFromProducts(product.id)">Supprimer</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de boucle -->
+  </div>
+</section>
