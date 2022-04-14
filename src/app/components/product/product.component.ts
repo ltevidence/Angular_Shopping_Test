@@ -46,4 +46,14 @@ nextPage:boolean=false;
       console.log(search.value)
     })
   }
+
+  searchKeywords(searchKeyword: any){
+    let keyword = searchKeyword.value.keyword;
+    this.productsService.searchByKeywordsService(keyword).subscribe(data =>{
+      this.products = data;
+      console.log(searchKeyword);
+    })
+  }
+
+
 }

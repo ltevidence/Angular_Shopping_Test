@@ -33,11 +33,11 @@
       <div class="col-6">
         <!-- Recherche par mot-clés-->
         <h6 class="text-white text-center">Search by keyword</h6>
-        <form>
+        <form (ngSubmit)="searchKeywords(searchKeyword)" #searchKeyword="ngForm">
           <div class="row mb-5">
             <div class="col-6">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Mot-clé">
+                <input type="text" class="form-control" name="keyword" placeholder="Mot-clé" ngModel>
               </div>
             </div>
             <div class="col-6">
