@@ -70,7 +70,7 @@
       "image": "/assets/img/blueberry.png",
       "price": 12,
       "id": 14,
-      "available": false
+      "available": true
     },
     {
       "title": "Pomme",
@@ -84,7 +84,7 @@
       "title": "Orange",
       "description": "pomme",
       "image": "/assets/img/orange.png",
-      "available": false,
+      "available": true,
       "price": 2,
       "id": 16
     },
@@ -94,13 +94,13 @@
       "image": "/assets/img/banana.png",
       "price": 12,
       "id": 17,
-      "available": false
+      "available": true
     },
     {
       "title": "Pomme",
       "description": "poemememem",
       "image": "/assets/img/apple.png",
-      "available": true,
+      "available": false,
       "price": 12,
       "id": 18
     },
@@ -108,7 +108,7 @@
       "title": "Orange",
       "description": "pomme",
       "image": "/assets/img/orange.png",
-      "available": false,
+      "available": true,
       "price": 2,
       "id": 19
     },

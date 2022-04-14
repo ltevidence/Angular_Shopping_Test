@@ -26,4 +26,10 @@ export class ProductsService {
     let available = product.available;
     return this.http.patch("http://localhost:3000/products/" + product.id, {available: !available})
   }
+
+  searchByRangePrice(range:any){
+    let min = range.min;
+    let max = range.max;
+    return this.http.get("http://localhost:3000/products?price_gte="+min+"&price_lte="+max)
+  }
 }

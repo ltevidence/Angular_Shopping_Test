@@ -18,7 +18,6 @@ nextPage:boolean=false;
   getProductsFromProduct(){
     this.productsService.getProductsFromService().subscribe(data =>{
       this.products = data;
-      console.log(this.products);
     })
   };
   deleteProductsFromProducts(id:any){
@@ -38,6 +37,13 @@ nextPage:boolean=false;
     this.productsService.isAvailable(product).subscribe(()=>{
       this.getProductsFromProduct();
       console.log("Availability changed")
+    })
+  }
+  searchProducts(search:any) {
+    let range = search.value;
+    this.productsService.searchByRangePrice(range).subscribe(data =>{
+      this.products = data;
+      console.log(search.value)
     })
   }
 }
