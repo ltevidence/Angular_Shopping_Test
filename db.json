@@ -13,7 +13,7 @@
       "description": "poemememem",
       "image": "/assets/img/apple.png",
       "available": true,
-      "price": "",
+      "price": 5,
       "id": 4
     },
     {
@@ -28,7 +28,7 @@
       "title": "Kiwi",
       "description": "Une banane toute jaune",
       "image": "/assets/img/kiwi.png",
-      "price": 12,
+      "price": 7,
       "id": 8,
       "available": false
     },
@@ -37,7 +37,7 @@
       "description": "poemememem",
       "image": "/assets/img/blueberry.png",
       "available": true,
-      "price": "",
+      "price": 10,
       "id": 9
     },
     {
@@ -53,7 +53,7 @@
       "description": "poemememem",
       "image": "/assets/img/lemon.png",
       "available": true,
-      "price": "",
+      "price": 10,
       "id": 12
     },
     {
