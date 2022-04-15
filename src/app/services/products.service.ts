@@ -22,11 +22,7 @@ product:any
     return this.http.post("http://localhost:3000/products", productsForm)
   }
 
-  updateProduct(product:any){
-    this.product.id = product.id
-  }
-
-  finaleUpdateProduct(formData:any){
+  updateProduct(formData:any){
     return this.http.patch("http://localhost:3000/products/"+ formData.id, formData)
   }
 

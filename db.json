@@ -1,15 +1,7 @@
 {
   "products": [
     {
-      "title": "Banane",
-      "description": "Une banane",
-      "image": "/assets/img/banana.png",
-      "price": 23,
-      "id": 2,
-      "available": true
-    },
-    {
-      "title": "Pomme",
+      "title": "Pomme ROUGE",
       "description": "poemememem",
       "image": "/assets/img/apple.png",
       "available": true,
@@ -17,23 +9,15 @@
       "id": 4
     },
     {
-      "title": "orange",
-      "description": "pomme",
-      "image": "/assets/img/orange.png",
-      "available": false,
-      "price": 2,
-      "id": 7
-    },
-    {
-      "title": "Kiwi",
-      "description": "Une banane toute jaune",
+      "title": "Kiwiiiiiii",
+      "description": "Un petit kiwiiii tout mignon",
       "image": "/assets/img/kiwi.png",
       "price": 7,
       "id": 8,
       "available": false
     },
     {
-      "title": "Mirtille",
+      "title": "Modification effectué",
       "description": "poemememem",
       "image": "/assets/img/blueberry.png",
       "available": true,
@@ -50,10 +34,10 @@
     },
     {
       "title": "Citron",
-      "description": "poemememem",
+      "description": "Un joli petit citron",
       "image": "/assets/img/lemon.png",
       "available": true,
-      "price": 10,
+      "price": 5,
       "id": 12
     },
     {
