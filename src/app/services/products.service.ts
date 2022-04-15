@@ -23,7 +23,7 @@ product:any
   }
 
   updateProduct(formData:any){
-    return this.http.patch("http://localhost:3000/products/"+ formData.id, formData)
+    return this.http.put("http://localhost:3000/products/"+ formData.id, formData)
   }
 
   isAvailable(product:any) {

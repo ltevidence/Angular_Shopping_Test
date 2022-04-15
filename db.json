@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "title": "Pomme ROUGE",
-      "description": "poemememem",
+      "title": "Pomme TRES rouge",
+      "description": "Une belle fille ennuyante, cette pomme sera parfaite pour préparer une pomme au four !",
       "image": "/assets/img/apple.png",
       "available": true,
       "price": 5,
@@ -17,8 +17,8 @@
       "available": false
     },
     {
-      "title": "Modification effectué",
-      "description": "poemememem",
+      "title": "Myrtille",
+      "description": "Des petites baies noires",
       "image": "/assets/img/blueberry.png",
       "available": true,
       "price": 10,
@@ -26,9 +26,9 @@
     },
     {
       "title": "Framboise",
-      "description": "pomme",
+      "description": "Une framboise gorgée de soleil !",
       "image": "/assets/img/raspberry.png",
-      "available": false,
+      "available": true,
       "price": 8,
       "id": 10
     },
@@ -42,15 +42,15 @@
     },
     {
       "title": "Orange",
-      "description": "pomme",
+      "description": "Une orange bien amère",
       "image": "/assets/img/orange.png",
       "available": false,
-      "price": 2,
+      "price": 10,
       "id": 13
     },
     {
-      "title": "Mirtille",
-      "description": "Une banane toute jaune",
+      "title": "Myrtille",
+      "description": "Blackberry",
       "image": "/assets/img/blueberry.png",
       "price": 12,
       "id": 14,
@@ -58,7 +58,7 @@
     },
     {
       "title": "Pomme",
-      "description": "poemememem",
+      "description": "Deux petites pommes cramoisie",
       "image": "/assets/img/apple.png",
       "available": true,
       "price": "",
@@ -66,7 +66,7 @@
     },
     {
       "title": "Orange",
-      "description": "pomme",
+      "description": "Un quartier d'orange ?? à 2 euros ?!",
       "image": "/assets/img/orange.png",
       "available": true,
       "price": 2,
@@ -74,7 +74,7 @@
     },
     {
       "title": "Banane",
-      "description": "Une banane toute jaune",
+      "description": "Verte ou jaune, la banane est toujours un régal !",
       "image": "/assets/img/banana.png",
       "price": 12,
       "id": 17,
@@ -82,7 +82,7 @@
     },
     {
       "title": "Pomme",
-      "description": "poemememem",
+      "description": "Pomme de rainette et pomme d'api, tapis tapis rouugeuh!",
       "image": "/assets/img/apple.png",
       "available": false,
       "price": 12,
@@ -90,7 +90,7 @@
     },
     {
       "title": "Orange",
-      "description": "pomme",
+      "description": "Pomme ce n'est pas, d'une Orange il s'agit",
       "image": "/assets/img/orange.png",
       "available": true,
       "price": 2,
@@ -106,7 +106,7 @@
     },
     {
       "title": "Petite pomme",
-      "description": "Encore une pomme !!",
+      "description": "Encore deux pommes !!",
       "image": "/assets/img/apple.png",
       "available": true,
       "price": 60,

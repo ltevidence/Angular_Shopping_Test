@@ -1,7 +1,7 @@
 <section class="container m-auto">
   <h1 class="text-center text-white mb-4 mt-4">La Liste des produits : {{products.length}}</h1>
   <!-- Alerte produit supprimé -->
-  <div class="bg-danger text-white text-center w-500 m-auto mb-4" *ngIf="show">Le produit est supprimé
+  <div class="bg-danger text-white text-center w-50 m-auto mb-4" *ngIf="show">Le produit est supprimé
   </div>
   <div class="bg-info text-dark text-center w-50 m-auto mb-4" *ngIf="modifyProductAlert">Le produit {{newProduct.title}} a été modifié
   </div>
@@ -53,9 +53,9 @@
     <!-- Commencement de la boucle qui affiche tous les produits -->
     <div class="col-sm" *ngFor="let product of products">
       <div class="card shadow-sm  rounded mb-4">
-        <img src="{{product.image}}" class="img-thumbnnail rounded-start m-auto"
-          style="object-fit: contain; width:500px;height:500px" alt="...">
         <div class="card-body">
+          <img src="{{product.image}}" class="img-thumbnnail rounded-start m-auto"
+          style="object-fit: contain; width:500px;height:500px" alt="...">
           <h5 class="card-title">{{product.title}}</h5>
           <p class="card-text">{{product.description}}</p>
           <div class="row">
@@ -82,12 +82,9 @@
               aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title m-auto" id="exampleModalLabel">Modifier le produit</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
+      
+                    <h5 class="modal-title m-auto mt-4" id="exampleModalLabel">Modifier le produit</h5>
+              
                   <div class="modal-body">
                     <!-- Formulaire de modification de produit-->
 
