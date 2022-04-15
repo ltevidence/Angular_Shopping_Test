@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ProductsService {
 product:any
+isAuthentified = false;
   constructor(private http:HttpClient) { }
 
   getProductsFromService(){

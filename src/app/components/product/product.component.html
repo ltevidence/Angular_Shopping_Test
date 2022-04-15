@@ -129,7 +129,7 @@
             </div>
             <!-- Fin de la modal-->
             <div class="col-sm mb-2"><button class="btn btn-danger shadow-sm"
-              (click)="deleteProductsFromProducts(product.id)">Supprimer</button>
+              (click)="deleteProductsFromProducts(product.id)" *ngIf="isAuth">Supprimer</button>
             </div>
           </div>
         </div>

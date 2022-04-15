@@ -10,8 +10,7 @@ products:any;
 show:boolean=false;
 nextPage:boolean=false;
 modifyProductAlert:boolean=false;
-
-
+isAuth:any
 newProduct = {
   title: "",
   description: "",
@@ -20,10 +19,13 @@ newProduct = {
   available: false
 }
 
+
   constructor(private productsService : ProductsService) { }
 
   ngOnInit(): void {
     this.getProductsFromProduct();
+    this.isAuth = this.productsService.isAuthentified
+
   }
 
   getProductsFromProduct(){
