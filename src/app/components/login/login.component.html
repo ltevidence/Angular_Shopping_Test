@@ -1,15 +1,18 @@
 <div class="container">
   <!-- Titre container -->
   <h1 class="text-center text-info mt-4 mb-4">Connexion</h1>
+  <div class="bg-danger p-4 m-auto text-center" *ngIf="message">
+    Les identifiants ne sont pas correcte
+  </div>
   <!-- Formulaire : Début-->
   <form (ngSubmit)="login(loginForm)" #loginForm="ngForm" class="w-50 m-auto">
     <div class="form-group">
       <label for="">Nom d'utilisateur</label>
-      <input type="text" class="form-control" name="username" placeholder="Entrez pseudo" ngModel required>
+      <input type="text" class="form-control" name="username" placeholder="Entrez pseudo" [(ngModel)]="user.username" required>
     </div>
     <div class="form-group">
       <label for="">Mot de passe</label>
-      <input type="password" class="form-control" name="password" placeholder="Entrez mot de passe" ngModel required>
+      <input type="password" class="form-control" name="password" placeholder="Entrez mot de passe" [(ngModel)]="user.password" required>
     </div>
     <button type="submit" class="btn btn-primary mt-2">Se connecter</button>
   </form>
