@@ -2,9 +2,9 @@
   "products": [
     {
       "title": "Banane",
-      "description": "Une banane toute jaune",
+      "description": "Une banane",
       "image": "/assets/img/banana.png",
-      "price": 12,
+      "price": 23,
       "id": 2,
       "available": true
     },

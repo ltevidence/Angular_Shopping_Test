@@ -9,6 +9,15 @@ export class ProductComponent implements OnInit {
 products:any;
 show:boolean=false;
 nextPage:boolean=false;
+
+
+newProduct = {
+  title: "",
+  description: "",
+  image: "",
+  price: 0,
+  available: false
+}
   constructor(private productsService : ProductsService) { }
 
   ngOnInit(): void {
@@ -54,6 +63,10 @@ nextPage:boolean=false;
       console.log(searchKeyword);
     })
   }
-
-
+  editProduct(formData:any){
+   this.newProduct = formData;
+   this.productsService.finaleUpdateProduct(this.newProduct).subscribe(()=>{
+     console.log(formData)
+   })
+  }
 }

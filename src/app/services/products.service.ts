@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductsService {
-
+product:any
   constructor(private http:HttpClient) { }
 
   getProductsFromService(){
@@ -15,11 +15,19 @@ export class ProductsService {
     return this.http.delete("http://localhost:3000/products/" + id)
 } 
   getProductFromPagination(id:any) {
-    return this.http.get("http://localhost.3000/products/?_page=1&_limit=1")
+    return this.http.get("http://localhost:3000/products/?_page=1&_limit=1")
   }
 
   addProductsFromService(productsForm: any){
     return this.http.post("http://localhost:3000/products", productsForm)
+  }
+
+  updateProduct(product:any){
+    this.product.id = product.id
+  }
+
+  finaleUpdateProduct(formData:any){
+    return this.http.patch("http://localhost:3000/products/"+ formData.id, formData)
   }
 
   isAvailable(product:any) {
