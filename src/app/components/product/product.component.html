@@ -64,17 +64,18 @@
             </div>
             <div class="col-sm mb-2"> <i class="fa-solid"
                 [ngClass]="{'fa-thumbs-up text-success': product.available, 'fa-thumbs-down text-danger': !product.available}"
-                (click)="isAvailableFromProducts(product)">{{product.available}}</i>
+                (click)="isAvailableFromProducts(product)"></i>
             </div>
-            <div class="col-sm mb-2"><button class="btn btn-danger"
-                (click)="deleteProductsFromProducts(product.id)">Supprimer</button></div>
+        
 
-            <!-- Modal qui permet d'avoir un formulaire pop up-->
+          <!-- Modal qui permet d'avoir un formulaire pop up-->
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" (click)="editProduct(product)" data-toggle="modal"
-              data-target="#exampleModal">
-              Modifier le produit
-            </button>
+          <div class="col-sm mb-2">
+            <button type="button" class="btn btn-outline-warning shadow-sm" (click)="editProduct(product)" data-toggle="modal"
+            data-target="#exampleModal">
+            Modifier
+          </button>
+          </div>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -82,7 +83,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title m-auto" id="exampleModalLabel">Modifier le produit :</h5>
+                    <h5 class="modal-title m-auto" id="exampleModalLabel">Modifier le produit</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -102,8 +103,8 @@
                           placeholder="Entrez escription" ngModel>
                       </div>
                       <div class="form-group">
-                        <label for="">Image du produit</label>
-                        <img class="w-25" src={{newProduct.image}}>
+                        <label for="">Image actuelle : </label>
+                        <img class="w-50" src={{newProduct.image}}>
                         <input type="text" class="form-control" name="image" [(ngModel)]="newProduct.image"
                           placeholder="Ajouter l'image">
                       </div>
@@ -120,7 +121,7 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                         <button type="submit" (click)="modifyProduct(newProduct)" data-dismiss="modal"
-                          class="btn btn-primary">Accepter les modifications</button>
+                          class="btn btn-info text-white">Valider</button>
                       </div>
                     </form>
 
@@ -129,7 +130,10 @@
                 </div>
               </div>
             </div>
-
+            <!-- Fin de la modal-->
+            <div class="col-sm mb-2"><button class="btn btn-danger shadow-sm"
+              (click)="deleteProductsFromProducts(product.id)">Supprimer</button>
+            </div>
           </div>
         </div>
       </div>

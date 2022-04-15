@@ -72,6 +72,7 @@ newProduct = {
 
   modifyProduct(newProduct:any){
     this.productsService.updateProduct(newProduct).subscribe(()=>{
+      
       console.log(this.newProduct);
       this.modifyProductAlert=true;
     })
