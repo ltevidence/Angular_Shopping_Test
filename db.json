@@ -25,14 +25,6 @@
       "id": 9
     },
     {
-      "title": "Framboise",
-      "description": "Une framboise gorgée de soleil !",
-      "image": "/assets/img/raspberry.png",
-      "available": true,
-      "price": 8,
-      "id": 10
-    },
-    {
       "title": "Citron",
       "description": "Un joli petit citron",
       "image": "/assets/img/lemon.png",
