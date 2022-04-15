@@ -6,17 +6,23 @@
   </li>
 
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+    <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="product">Les produits</a>
+    <a class="nav-link text-white" href="product">Les produits</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" routerLink="add-product">Ajouter un produit</a>
+    <a class="nav-link text-white" routerLink="add-product">Ajouter un produit</a>
   </li>
 
   <li class="nav-item">
-    <button class="nav-link  text-white btn btn-success" routerLink="login">Connexion</button>
+    <button class="nav-link  text-white btn btn-outline-primary" routerLink="login">Connexion</button>
   </li>
 </ul>
 <router-outlet></router-outlet>
+
+<footer class="bg-warning shadow" style="height:200px">
+  <ul class="nav justify-content-center  p-3 mt-5">
+    <li class="nav-item p-5">Tout droits reservés</li>
+  </ul>
+</footer>
