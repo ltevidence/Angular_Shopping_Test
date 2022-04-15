@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "title": "Pomme TRES rouge",
-      "description": "Une belle fille ennuyante, cette pomme sera parfaite pour préparer une pomme au four !",
-      "image": "/assets/img/apple.png",
-      "available": true,
-      "price": 5,
-      "id": 4
-    },
-    {
       "title": "Kiwiiiiiii",
       "description": "Un petit kiwiiii tout mignon",
       "image": "/assets/img/kiwi.png",
