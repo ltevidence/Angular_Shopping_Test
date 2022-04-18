@@ -11,27 +11,7 @@
     <div class="row">
       <div class="col-6">
 
-        <!-- Recherche par gamme de prix-->
-        <h6 class="text-white text-center">Search by price range</h6>
-        <form (ngSubmit)="searchProducts(search)" #search="ngForm">
-          <div class="row mb-5">
-            <div class="col-4">
-              <div class="form-group">
-                <input type="number" name="min" class="form-control" placeholder="Min price" ngModel>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="form-group">
-                <input type="number" name="max" class="form-control" placeholder="Max price" ngModel>
-              </div>
-            </div>
-            <div class="col-4">
-              <button type="submit" class="btn btn-primary">Rechercher</button>
-            </div>
-          </div>
-        </form>
-      </div>
-
+       
       <div class="col-6">
         <!-- Recherche par mot-clés-->
         <h6 class="text-white text-center">Search by keyword</h6>
